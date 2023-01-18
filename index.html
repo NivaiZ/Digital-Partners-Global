@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Partners Global</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+</head>
+
+<body class="page-body">
+
+  <main class="page-main">
+    <h1 class="page-main__heading">Hello</h1>
+
+    <section class="sign-up-modal">
+      <p class="sign-up-modal__text">For business enquiries please use the form below</p>
+      <p class="sign-up-modal__desc">*Required</p>
+
+      <form class="sign-up-modal__form" action="https://echo.htmlacademy.ru/" method="POST" id="form">
+
+        <ul class="form-block__inputs">
+
+          <li class="form-block__item">
+            <label class="form-block__label" for="appointment-name">Name*</label>
+            <input class="form-block__input" id="appointment-name" type="text" name="name" required autocomplete="off">
+          </li>
+
+          <li class="form-block__item">
+            <label class="form-block__description" for="appointment-company">Company*</label>
+            <input class="form-block__input" id="appointment-company" type="text" name="company" required
+              autocomplete="off">
+          </li>
+
+          <li class="form-block__item">
+            <label class="form-block__description" for="appointment-email">E-mail*</label>
+            <input class="form-block__input" id="appointment-email" type="email" name="email" required
+              autocomplete="off">
+          </li>
+
+          <li class="form-block__item">
+            <label class="form-block__description" for="appointment-phone">Phone</label>
+            <input class="form-block__input" id="appointment-phone" type="text" name="phone" autocomplete="off">
+          </li>
+
+          <li class="form-block__item">
+            <label class="form-block__description" for="appointment-subject">Subject</label>
+            <input class="form-block__input" id="appointment-subject" type="text" name="subject" autocomplete="off">
+          </li>
+
+          <li class="form-block__item">
+            <label class="form-block__description" for="appointment-message">Message*</label>
+            <textarea class="form-block__input form-block__input--message" rows="1" name="message"
+              id="appointment-message" required></textarea>
+          </li>
+
+          <li class="form-block__item form-block__item--row">
+            <input class="form-block__tick visually-hidden" type="checkbox" name="consent" id="form-agreement">
+            <label class="form-block__label form-block__label-checkbox--padding" for="form-agreement"></label>
+            <span class="form-block__consent">I accept<a href="#" class="form-block__policy">Terms
+                and Privacy Policy</a></span>
+          </li>
+
+          <li class="form-block__item form-block__item-button--arrangement">
+            <button class="form-block__submit" type="submit" disabled>Send</button>
+          </li>
+        </ul>
+        
+      </form>
+
+    </section>
+  </main>
+</body>
+
+</html>
