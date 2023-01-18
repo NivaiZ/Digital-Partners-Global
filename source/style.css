@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 html {
     height: 100%;
 }
@@ -218,6 +219,10 @@ html {
 .form-block__submit:not(:hover) {
     opacity: 0.5;
     transition: 3s;
+}
+
+.form-block__submit:disabled {
+    cursor: not-allowed;
 }
 
 .form-block__consent {
