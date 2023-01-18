@@ -15,7 +15,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
-    background-image: url("bgimage.png");
+    background-image: url("../bgimage.png");
 }
 
 .page-main {
@@ -172,7 +172,7 @@ html {
 }
 
 .form-block__tick+label::before {
-    content: url("checkboxoff.svg");
+    content: url("../checkboxoff.svg");
     position: absolute;
     width: 31px;
     height: 31px;
@@ -180,7 +180,7 @@ html {
 }
 
 .form-block__tick:checked+label::before {
-    content: url("checkboxon.svg");
+    content: url("../checkboxon.svg");
     position: absolute;
     width: 31px;
     height: 31px;
