@@ -342,7 +342,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  background-image: url("/img/bgimage.png");
+  background-image: url("../img/bgimage.png");
 }
 .container {
   margin: 0 auto;
@@ -441,10 +441,10 @@ html {
   overflow: hidden;
 }
 .form-block__tick + label::before {
-  content: url("/img/checkboxoff.svg");
+  content: url("../img/checkboxoff.svg");
 }
 .form-block__tick:checked + label::before {
-  content: url("/img/checkboxon.svg");
+  content: url("../img/checkboxon.svg");
 }
 .form-block__data {
   padding: 0;
