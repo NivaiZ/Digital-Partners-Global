@@ -1,0 +1,125 @@
+.form__text--span {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: @shadow-blue;
+  padding-right: 7px;
+}
+
+.form-block__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: @shadow-blue;
+}
+
+.form-block__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-decoration: none;
+  background: @dark-jungle;
+  border-bottom: 1px solid @extra-blue;
+  margin-bottom: 38px;
+  color: @basic-white;
+  outline: none;
+  transition: 0.5s ease;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.form-block__enter:focus {
+  content: "";
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid @basic-white;
+}
+
+.form-block__label {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: @shadow-blue;
+  display: flex;
+  align-items: center;
+}
+
+.form-block__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: @gunmetal;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 121px;
+  height: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: @button-submit;
+
+  &:not(:hover) {
+    opacity: 0.5;
+    transition: 3s;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.form-block__tick {
+  .visually-hidden();
+}
+
+.form-block__tick+label::before {
+  content: url("/img/checkboxoff.svg");
+}
+
+.form-block__tick:checked+label::before {
+  content: url("/img/checkboxon.svg");
+}
+
+.form-block__data {
+  padding: 0;
+  margin: 0;
+}
+
+.form-block__item--row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.form-block__link {
+  color: @shadow-blue;
+  text-decoration: underline;
+  margin-left: 5px;
+
+  &:hover {
+    opacity: 0.5;
+    transition: 0.1s ease;
+  }
+}
+
+.form-block__consent {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: @shadow-blue;
+  margin-left: 10px;
+}
+
+.form-block__item---send {
+  display: flex;
+  align-items: center;
+}
+
+.form-block__input--message {
+  resize: none;
+}

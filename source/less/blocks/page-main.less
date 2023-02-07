@@ -1,0 +1,29 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: @font;
+
+  @media (max-width: 600px) {
+    .page-main {
+      margin: 0 auto;
+    }
+  }
+}
+
+.page-main__heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 120%;
+  color: @basic-white;
+  margin: 25px 0 25px 0;
+  align-self: center;
+  text-shadow: @page-main__shadow;
+
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
+}
